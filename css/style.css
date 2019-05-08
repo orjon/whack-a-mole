@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Karla', sans-serif;
+  color: #F00; }
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; }
+  main #intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; }
+    main #intro div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main #intro div img {
+        align-items: center;
+        width: 80%; }
+  main #game {
+    cursor: url("../images/hammerUp.png"), pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh;
+    width: 100vw;
+    display: none; }
+    main #game .scoreBoard {
+      width: 100vw;
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+      main #game .scoreBoard #playerScore {
+        color: #F00;
+        font-family: 'Permanent Marker', cursive;
+        text-shadow: 3px 3px 10px #111;
+        font-size: 7vh; }
+      main #game .scoreBoard #countDown {
+        line-height: 0.6;
+        color: #FF0;
+        text-shadow: 3px 3px 10px #111;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 6vh; }
+    main #game .grid {
+      height: 85vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center; }
+      main #game .grid .row4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 15%;
+        width: 100%; }
+      main #game .grid .row3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 22.5%;
+        width: 100%; }
+      main #game .grid .row2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 27.5%;
+        width: 100%; }
+      main #game .grid .row1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 35%;
+        width: 100%; }
+      main #game .grid .moleHole {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+        main #game .grid .moleHole img {
+          width: 100%; }
+  main #game:active {
+    cursor: url("../images/hammerDown.png"), pointer; }
+  main #results {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    display: none; }
+    main #results #finalScore {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      color: #F00;
+      font-family: 'Permanent Marker', cursive;
+      text-shadow: 3px 3px 10px #111;
+      font-size: 20vh; }
+
+/*# sourceMappingURL=style.css.map */

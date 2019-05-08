@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="]" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Whack-A-Mole</title>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</head>
+<body background='images/grass1.jpg'>
+  <audio class='soundlow' src ='audio/pop_low.wav'></audio>
+  <audio class='soundhigh' src ='audio/pop_high.wav'></audio>
+  
+  <main>
+    <section id='intro'>
+      <div><img class='splashScreen' src='images/splash.png'></div>
+    </section>
+    <section id='game'  class='hide'>
+      <header class='scoreBoard'>
+        <div id='playerScore'> - SCORE - </div>
+        <div id='countDown'>60 seconds</div>
+      </header>
+      <section class='grid'>
+        <div class='row4'>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+
+        </div>
+        <div class='row3'>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+
+
+        </div>
+        <div class='row2'>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+
+        </div>
+        <div class='row1'>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+          <div class='moleHole'><img class='moleNone' src='images/moleNone.png'></div>
+
+
+        </div>
+      </section>
+    </section>
+    <section id='results'>
+    <div id='finalScore'>xxx</div>
+    </section>
+  </main>
+
+</body>
+</html>
+
+
+<!--
+
+Whack-a-Mole
+Introduction
+Your task is to create the classic children's game Whack-a-Mole using HTML, CSS and JavaScript!
+
+Requirements
+Create a grid of squares
+A "mole" should randomly appear in a square every 1000 ms for 750 ms
+If the user clicks on the square containing the "mole" they should get a point
+The game should run for 60 seconds
+Note: Remember to wrap your code in a DOMContentLoaded event listener.
+
+Bonus
+Make a start game button which displays on page load, then disappears when the game starts
+Make an end game screen which displays the users score and displays the start game button again
+Clicking on the start button would reset the score, timer and start the game again
+Bonus bonus
+Make the game mobile responsive
+Add different levels (more squares, faster moles, less time etc)
+Add sounds
+Add CSS animations (hint: check out Aminate.css) -->
