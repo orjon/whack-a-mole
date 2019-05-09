@@ -1,13 +1,14 @@
 $(() => {
+  console.log('www.orjon.com')
+  console.log('Whack-A-Mole v2.0 2019-05-09')
+  console.log('http://www.orjon.com/mole')
 
-  let player = {
+  const player = {
     score: 0,
     incrementScore: function() {
       this.score = this.score +1
     }
   }
-
-  console.log('kill the bastards...')
 
   const $screenIntro = $('#intro')
   const $screenGame = $('#game')
